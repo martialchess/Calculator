@@ -32,7 +32,7 @@ def calculator():
         result = calc_function(first_value, second_value)
         print(f"{first_value} {method} {second_value} = {result}")
 
-        should_continue = input("Type 'yes' to continue with the current result, or 'no' to start fresh:\n")
+        should_continue = input(f"Type 'yes' to continue with the current result: {result}, or 'no' to start fresh:\n")
         if should_continue == "yes":
             first_value = result #carry forward the result
         else:
